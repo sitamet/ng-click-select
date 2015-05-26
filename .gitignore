@@ -4,5 +4,3 @@ npm-debug.log
 sc.log
 
 typings
-example/**/*.js
-src/**/*.js
