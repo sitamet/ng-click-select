@@ -1,14 +1,18 @@
 ng-click-select
 ===============
 
-***This version is for Angular 2. For Angular 1.x, see the [1.x branch][1.x].***
+***This branch is for Angular 2. For Angular 1.x, see the [1.x branch][1.x].***
 
-Angular directive to select contents of text input when clicked.
-Useful to allow user to easily copy value into their clipboard.
+Angular directive to select contents of text input or text area elements when clicked.
+Useful to allow user to easily copy value into their clipboard without a Flash-based solution like [ZeroClipboard].
 
-[See demo.](https://adjohnson916.github.io/ng-click-select/example/index.html)
+[See demo][demo].
 
 Also [available at ngModules.org](http://ngmodules.org/modules/ng-click-select).
+
+## In The Wild
+These projects use ng-click-select:
+* [SecretStash](https://github.com/adjohnson916/secretstash)
 
 ## Install
 
@@ -17,15 +21,15 @@ Depends on Angular 2.
 Via Bower:
 
 ```sh
-$ bower install --save ng-click-select
+$ bower install --save ng-click-select#2
 ```
 
 Then include `src/ng-click-select.js` in your page.
 
-And add it as a dependency of your module, e.g.:
+And/or add it as a dependency of your module, e.g.:
 
 ```js
-import ClickSelect from 'src/ng-click-select';
+import NgClickSelect from 'src/ng-click-select';
 
 @Component({
   /* ... */
@@ -61,4 +65,7 @@ tsd reinstall
 npm run tsc
 ```
 
+
 [1.x]: https://github.com/adjohnson916/ng-click-select/tree/v1.x
+[demo]: https://adjohnson916.github.io/ng-click-select/example/
+[zeroclipboard]: https://github.com/zeroclipboard/zeroclipboard
